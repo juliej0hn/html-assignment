@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q4 - Accessible Form</title>
+</head>
+<body>
+<form>
+  <fieldset>
+    <legend>Contact Info</legend>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" required
+      pattern="^[\w.%+-]+@[\w.-]+\.[A-Za-z]{2,}$">
+
+    <label for="phone">Phone</label>
+    <input id="phone" type="tel" required pattern="^\+?\d{7,15}$">
+
+    <label for="date">Date</label>
+    <input id="date" type="date" required>
+
+    <label for="msg">Message</label>
+    <textarea id="msg" required></textarea>
+
+    <button type="submit">Send</button>
+  </fieldset>
+</form>
+</body>
+</html>
